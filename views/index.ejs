@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/css/<%=manifest["style.css"]%>' />
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+  </head>
+  <body >
+  <div class="mainPage">
+  	<div class="nav-top">
+  		<!-- <h1><%= title %></h1>
+   	 	<p>Welcome to <%= title %></p> -->
+   	 	<p class="nav-top-font">每天进步一点点</p>
+   	 	<p class="nav-top-font1">做更好的自己</p>
+
+  	</div>
+  	
+  	<!-- 使用include导入页面导航模板 -->
+  	<% include  nav.ejs %>
+    
+
+    <div class="mainContent">
+
+    	<div class="content_list">
+    		<!-- <span>文章列表</span> -->
+    		<ul class="list_content">
+    			<li>
+    					<div class="news-img-box fl">
+							<a href="http://www.duanliang920.com/learn232.html" target="_blank">
+								<img class="news-list-img" src="/images/mainBg4.jpg" width="215" height="144" alt="如何建立个人博客？">
+							</a>
+							<p class="hot">
+								热<span class="triangle"></span>
+							</p>
+						</div>
+						<div class="news-content fr">
+							<h3 class="title-h3">
+								<a href="http://www.duanliang920.com/learn232.html" target="_blank">
+									欢迎来到我的个人空间
+								</a>
+							</h3>
+							<div class="author-info clearfix">
+								<p class="author fl">
+									<a href="/about/">
+										<img src="/images/mainBg4.jpg" width="33" height="33" alt="段亮">
+										<span>lzy</span>
+									</a>
+								</p>
+								<span class="date-time fl">
+									发布时间：
+										<em>
+											2014-06-05 10:24:00
+										</em>
+								</span>
+								<span class="classify fl">
+									分类：<a href="http://www.duanliang920.com/learn/">学无止境</a>
+								</span>
+							</div>
+							<p class="news-info">
+								想必很多人都想建立一个，属于自己的个人博客，把自己的一些学习的经验和经历，通过互联网的形式来分享给别人。通过分享与网友进行互动，让更多的人了解和认识你，并且树立自己在互联网上的个人品牌，其实这就是一种“自媒体”。那么我们怎么去建立自己独立...
+							</p>
+						</div>
+    			</li>
+    			
+    			<li>
+    				
+    			</li>
+
+
+    		</ul>
+    	</div>
+    	<div class="main_intro">
+    		<div class="main_intro_top">
+    			<strong>关于我</strong>
+    			<p>asdad爱仕达奥大大大大大大大大大大大多</p>
+    			<strong>联系方式</strong>
+    			<p>
+    				<span>微博</span>
+    				<a href="http://weibo.com/2968928413/profile?rightmod=1&wvr=6&mod=personinfo" target="_blank">
+    					<img src="" height="30" width="116">
+    				</a>
+    			</p>
+    		</div>
+    	</div>
+
+    	
+
+    	
+    </div>
+   
+ 
+
+
+  </div>
+    
+  	 <script type="text/javascript" src="/js/star.js" ></script>
+     <script src="js/require.js"></script>
+    <script>requirejs(<%- JSON.stringify(config)%>);</script>
+    <script>
+    require(["/js/<%=manifest["index.js"]%>"], function (index) {index.init()})
+
+  </body>
+</html>

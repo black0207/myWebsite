@@ -1,0 +1,40 @@
+
+ 
+  	
+
+    <div class="mainNav">
+        <ul>
+            <li >
+                <a  href="/index?nav=0"><i class="glyphicon glyphicon-home"></i>网站主页</a>
+            </li>
+            <li>
+                 <a  href="/talks?nav=1"><i class="fa fa-book fa-lg"></i>前端杂谈</a>
+            </li>
+            <li>
+                <a href="/beautifulLife?nav=2"><i class="fa fa-tripadvisor fa-lg"></i>生活娱乐</a>
+            </li>
+            <li>
+                <a href="/myDiary?nav=3"><i class="glyphicon glyphicon-pencil"></i>个人日志</a>
+            </li>
+            
+            <li>
+                 <a href="/myResume?nav=4"><i class="glyphicon glyphicon-user"></i>个人简历</a>
+            </li>
+
+        </ul>
+        <div class="nav-search hidden">
+             <input type="" name="">
+             <input type="" name="" value="查询">
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+         var order = <%= nav %>;
+        $(".mainNav ul li a").removeClass("mainNav-hover");
+         $(".mainNav ul li a").eq(order).addClass("mainNav-hover");
+     });
+</script>
+    

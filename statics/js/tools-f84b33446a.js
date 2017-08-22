@@ -1,0 +1,1 @@
+define(["jquery"],function(n){return{add:function(d,e){n("body").append(n("<div>").text(d).css({color:e}))}}});
