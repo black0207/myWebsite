@@ -78,12 +78,13 @@
     };
 
 
-    $(document).ready(function(){    
-    var height = window.innerHeight;//$(document).height(); 
-    console.log(height)  ; 
+    $(document).ready(function(){  
+    //获取页面的真实高度  
+    var height = window.innerHeight>document.body.scrollHeight?window.innerHeight:document.body.scrollHeight;//$(document).height(); 
+    console.log(height) ; 
     $('.mainPage').css('height',height);
     $(window).resize(function(){
-        var height = window.innerHeight;//$(document).height(); 
+        var height = window.innerHeight>document.body.scrollHeight?window.innerHeight:document.body.scrollHeight;//$(document).height(); 
         console.log("resize======"+height)  ; 
         $('.mainPage').css('height',height);    
     })

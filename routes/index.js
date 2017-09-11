@@ -12,8 +12,12 @@ var http = require('http');
 
 module.exports = function(app) {
     app.get('/index', function(req, res) {
-    	var nav = req.query.nav;
-        res.render('index', { title: '主页' ,nav : nav, manifest: app.get("manifest"), config: app.get("config")});
+    	var nav;
+    	if(req.query.nav){
+    		nav = req.query.nav;
+    	}
+    	nav = 0;
+        res.render('index', { title: '网站主页' ,nav : nav, manifest: app.get("manifest"), config: app.get("config")});
     });
 
 
