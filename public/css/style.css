@@ -219,16 +219,84 @@ a {
     position: relative;
     
 }
-.aboutMe,.contactList{
+.aboutMe{
 	margin:10px 0 15px 10px;
-	
+	height: 60px;
 }
 .aboutMe span{
 	display: block;
 	margin-right:10px;
 	margin-bottom: 10px;
 }
+.contactList{
+	margin:10px 0 0 10px;
+	
+}
 .contactList a{
 	margin-left: 5px;
 }
+.imgOuter{
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 20px;
+	border-radius: 30px;
+	overflow: hidden;
+	position: relative;
+} 
+.imgOuter .img-x{
+	display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.imgOuter .img-y{
+	display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+/*前端杂谈页面的CSS*/
+
+.talkList{
+	padding-top:30px;
+	width: 1000px;
+	margin:0 auto;
+}
+.talkList article{
+	margin-bottom: 100px;
+    padding: 25px;
+	opacity: 1;
+    display: block;
+    transform: translateY(0px);
+    border: 1px solid #eee;
+    box-shadow: 0 0 14px #cacaca;
+}
+.talkList article .art-h{
+	font-size: 26px;
+    text-align: center;
+    word-break: break-word;
+    font-weight: 400;
+}
+.art-meta{
+	text-align: center;
+	margin:20px 0 40px 0;
+}
+.art-meta span{
+	margin-right: 5px;
+}
+.art-intro{
+	width: 900px;
+	margin: 0 auto;
+	text-align: center;
+
+}
+.art-img img{
+	width: 850px;
+	height: 490px;
+}

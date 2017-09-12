@@ -3,9 +3,10 @@
   <head>
     <title><%= title %></title>
     <link rel="icon" type="image/x-icon" href="/images/icons/lzy.ico">
-    <link rel='stylesheet' href='/css/<%=manifest["style.css"]%>' />
+   
     <link rel="stylesheet" type="text/css" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/js/lib/bootstrap/dist/css/bootstrap.min.css" >
+     <link rel='stylesheet' href='/css/<%=manifest["style.css"]%>' />
     <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
   </head>
   <body >
@@ -86,8 +87,13 @@
     			<strong>关于我</strong>
     			
     				<div  class="aboutMe">
-    					<span>性别：男</span>
-    					<span>星座：双鱼座</span>
+    					<div class="imgOuter">
+    						<img class="img-x" src="/images/lzyPhoto.jpg" title="头像图片" alt="头像图片">
+    					</div>
+    					
+	    					<span>性别：男</span>
+	    					<span>星座：双鱼座</span>
+    				
     				</div>
     			
     			<strong>联系方式</strong>
@@ -107,6 +113,12 @@
 	    				<span>微博：</span>
 	    				<a href="http://weibo.com/2968928413/profile?rightmod=1&wvr=6&mod=personinfo" target="_blank">
 	    					水在瓶0207
+	    				</a>
+	    			</div>
+	    			<div class="contactList">
+	    				<span>github：</span>
+	    				<a href="https://github.com/black0207" target="_blank">
+	    					black0207
 	    				</a>
 	    			</div>
     		</div>

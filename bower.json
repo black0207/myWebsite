@@ -1,0 +1,28 @@
+{
+  "name": "lzy",
+  "description": "lzy-website",
+  "main": "app.js",
+  "authors": [
+    "lzy"
+  ],
+  "license": "mit",
+  "keywords": [
+    "website"
+  ],
+  "homepage": "https://github.com/black0207/myWebsite",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "/public/js/lib"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  }
+}

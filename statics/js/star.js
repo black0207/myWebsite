@@ -19,7 +19,7 @@
             }
         }
         function k() {
-            r = u.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth, n = u.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+            r = u.width = window.innerWidth || document.documentElement.clientWidth|| document.body.clientWidth, n = u.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight || document.body.scrollHeight
         }
         function b() {
             e.clearRect(0, 0, r, n);
@@ -86,7 +86,9 @@
     $(window).resize(function(){
         var height = window.innerHeight>document.body.scrollHeight?window.innerHeight:document.body.scrollHeight;//$(document).height(); 
         console.log("resize======"+height)  ; 
-        $('.mainPage').css('height',height);    
+         document.getElementsByTagName("convas").remove;
+        $('.mainPage').css('height',height);
+        star();    
     })
     star();
 });
