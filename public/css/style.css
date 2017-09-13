@@ -300,3 +300,30 @@ a {
 	width: 850px;
 	height: 490px;
 }
+blockquote p{
+	text-align: left;
+	line-height: 30px;
+}
+.art-preface{
+	text-align: left;
+	text-indent: 2em;
+}
+.art-more{
+	margin-top:40px;
+
+}
+.art-more a{
+	display: block;
+	width: 110px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #e5a2b4;
+	margin: 0 auto;
+	color: #e5a2b4;
+}
+.art-more a:hover{
+	text-decoration:none;
+	background: #e5a2b4;
+	font-weight: bold;
+	color: #fff;
+}
