@@ -19,9 +19,7 @@ module.exports = function(app) {
     	nav = 0;
         res.render('index', { title: '网站主页' ,nav : nav, manifest: app.get("manifest"), config: app.get("config")});
     });
-
-
-
+	
 
     app.get('/talks',function(req, res){
     	console.log("getdata!!");
